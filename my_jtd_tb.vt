@@ -1,0 +1,149 @@
+`timescale 1 ns / 1 ps //时间精度和刻度
+`include "my_jtd.v" //包含原文件
+module my_jtd_tb;
+
+//-------变量声明----------
+reg pka_1or2m_gclk,start_flag,rst_n;
+reg[31:0] Preamble;
+reg[2:0] BLE_TYPE;
+reg BLE_ADV_STATE;
+reg BLE_TX_RX_EN;
+//input reg BLE_WHITEN_EN;
+reg[6:0] BLE_WHITEN_INIT;
+reg[23:0] BLE_CRC_INIT;
+reg[31:0] BLE_ACC_ADDR;
+reg[15:0] BLE_ADV_HEADER;
+reg[15:0] BLE_DATA_HEADER;
+reg[1:0] BLE_CI;
+reg[2:0] BLE_TERM1;
+reg[2:0] BLE_TERM2;
+
+reg[6:0] ram_a1;
+wire[31:0] ram_d1;
+reg ram_cs1,ram_we1,ram_oe1;
+
+wire r_fsm_data;
+wire r_fsm_data_vld;
+wire[3:0] current_state,next_state;
+wire[7:0] r_cnt;
+
+//-------例化----------
+my_jtd u1(
+pka_1or2m_gclk,start_flag,Preamble,rst_n,
+BLE_TYPE,BLE_ADV_STATE,BLE_TX_RX_EN,BLE_WHITEN_INIT,BLE_CRC_INIT,BLE_ACC_ADDR,BLE_ADV_HEADER,BLE_DATA_HEADER,BLE_CI,BLE_TERM1,BLE_TERM2,
+ram_a1,ram_d1,ram_cs1,ram_we1,ram_oe1,
+r_fsm_data,r_fsm_data_vld,
+current_state,next_state,r_cnt);
+
+//-------ram赋值-------
+//ram reg declaration
+reg [31:0]din1;
+//reg [31:0]din2;
+//ram 赋值
+assign ram_d1 = (ram_cs1 & ram_we1)?din1:32'bzzzz_zzzz_zzzz_zzzz_zzzz_zzzz_zzzz_zzzz;
+//assign ram_d2 = (cs2 & we2)?din2:32'bzzzz_zzzz_zzzz_zzzz_zzzz_zzzz_zzzz_zzzz; 
+
+//--------时钟-----------
+always
+ begin
+ #5
+ pka_1or2m_gclk=~pka_1or2m_gclk;
+ end
+
+//-----initial块-----------
+initial
+begin
+//1M uncoded,preamble:0x55,aa=0xAA08192B,channel index=16(即白化初始值为：0000101)
+/*pka_1or2m_gclk=1'b0; start_flag=1'b0;rst_n=1'b0;BLE_TX_RX_EN=1'b0;
+Preamble=32'h5555_5555;BLE_TYPE=3'b001;BLE_ADV_STATE=1'b1;BLE_WHITEN_INIT=7'b0000101;BLE_CRC_INIT=24'hC4C181;
+BLE_ACC_ADDR=32'hAA08192B;BLE_ADV_HEADER=16'd0;BLE_DATA_HEADER=16'h0516;
+BLE_CI=2'd0;BLE_TERM1=3'd0;BLE_TERM2=3'd0;
+ram_a1=7'd0;din1=32'h0403_0201;ram_cs1=1'b1;ram_we1=1'b1;ram_oe1=1'b1;
+
+#20 ram_a1=7'd1;din1=32'h0000_0005;ram_we1=1'b1;ram_oe1=1'b1;
+#20 start_flag=1'b1;rst_n=1'b1;BLE_TX_RX_EN=1'b1;ram_cs1=1'b0;
+#2000 $stop;*/
+
+//1M coded,preamble:0x3C,aa=0x8E89BED6,白化值等未知，想先测试一下编码的能力
+pka_1or2m_gclk=1'b0; start_flag=1'b0;rst_n=1'b0;BLE_TX_RX_EN=1'b0;
+Preamble=32'h3C3C_3C3C;BLE_TYPE=3'b100;BLE_ADV_STATE=1'b1;BLE_WHITEN_INIT=7'b0000101;BLE_CRC_INIT=24'h555555;
+BLE_ACC_ADDR=32'h8E89BED6;BLE_ADV_HEADER=16'd0;BLE_DATA_HEADER=16'h0300;
+BLE_CI=2'b00;BLE_TERM1=3'd0;BLE_TERM2=3'd0;
+ram_a1=7'd0;din1=32'h0045_4C42;ram_cs1=1'b1;ram_we1=1'b1;ram_oe1=1'b1;
+
+#20 ram_a1=7'd1;din1=32'h0000_0000;ram_we1=1'b1;ram_oe1=1'b1;
+#20 start_flag=1'b1;rst_n=1'b1;BLE_TX_RX_EN=1'b1;ram_cs1=1'b0;
+#20000 $stop; 
+//这个实例的问题在于只进行了编码，但是没有先白化，所以没有办法很好测试，但是这个已经证明编码能力没有问题。
+
+//1M coded,preamble:0x3C3C3C3C,aa=0xAA08192B,沿用了上例uncoded的,dwh_init=0000101,s=1，测试的是白化时的输入。
+/*pka_1or2m_gclk=1'b0; start_flag=1'b0;rst_n=1'b0;BLE_TX_RX_EN=1'b0;
+Preamble=32'h3C3C_3C3C;BLE_TYPE=3'b100;BLE_ADV_STATE=1'b1;BLE_WHITEN_INIT=7'b0000101;BLE_CRC_INIT=24'hC4C181;
+BLE_ACC_ADDR=32'hAA08192B;BLE_ADV_HEADER=16'd0;BLE_DATA_HEADER=16'h0516;
+BLE_CI=2'b01; //BLE_CI=2'b00;
+BLE_TERM1=3'd0;BLE_TERM2=3'd0;
+ram_a1=7'd0;din1=32'h0403_0201;ram_cs1=1'b1;ram_we1=1'b1;ram_oe1=1'b1;
+
+#20 ram_a1=7'd1;din1=32'h0000_0005;ram_we1=1'b1;ram_oe1=1'b1;
+#20 start_flag=1'b1;rst_n=1'b1;BLE_TX_RX_EN=1'b1;ram_cs1=1'b0;
+#20000 $stop;*/
+
+//不管是coded还是uncoded，还没有测试好payload的功能，需要最后测试，还有记得此时需要注意header的变化。
+/*
+pka_1or2m_gclk=1'b0; start_flag=1'b0;rst_n=1'b0;BLE_TX_RX_EN=1'b0;
+Preamble=32'h3C3C_3C3C;BLE_TYPE=3'b100;BLE_ADV_STATE=1'b1;BLE_WHITEN_INIT=7'b0000101;BLE_CRC_INIT=24'hC4C181;
+BLE_ACC_ADDR=32'hAA08192B;BLE_ADV_HEADER=16'd0;
+BLE_CI=2'b01; //BLE_CI=2'b00/01;
+BLE_TERM1=3'd0;BLE_TERM2=3'd0;
+*/
+
+//4 bytes
+/*
+BLE_DATA_HEADER=16'h0416;
+ram_a1=7'd0;din1=32'h0403_0201;ram_cs1=1'b1;ram_we1=1'b1;ram_oe1=1'b1;
+//#20 ram_a1=7'd1;din1=32'h0807_0605;ram_we1=1'b1;ram_oe1=1'b1;
+#20 start_flag=1'b1;rst_n=1'b1;BLE_TX_RX_EN=1'b1;ram_cs1=1'b0;
+#20000 $stop;
+*/
+
+//5 bytes（前面已经测试）
+//6 bytes
+/*
+BLE_DATA_HEADER=16'h0616;
+ram_a1=7'd0;din1=32'h0403_0201;ram_cs1=1'b1;ram_we1=1'b1;ram_oe1=1'b1;
+#20 ram_a1=7'd1;din1=32'h0807_0605;ram_we1=1'b1;ram_oe1=1'b1;
+#20 start_flag=1'b1;rst_n=1'b1;BLE_TX_RX_EN=1'b1;ram_cs1=1'b0;
+#20000 $stop;
+*/
+
+//7 bytes
+/*
+BLE_DATA_HEADER=16'h0716;
+ram_a1=7'd0;din1=32'h0403_0201;ram_cs1=1'b1;ram_we1=1'b1;ram_oe1=1'b1;
+#20 ram_a1=7'd1;din1=32'h0807_0605;ram_we1=1'b1;ram_oe1=1'b1;
+#20 start_flag=1'b1;rst_n=1'b1;BLE_TX_RX_EN=1'b1;ram_cs1=1'b0;
+#20000 $stop;
+*/
+
+//8 bytes
+/*
+BLE_DATA_HEADER=16'h0816;
+ram_a1=7'd0;din1=32'h0403_0201;ram_cs1=1'b1;ram_we1=1'b1;ram_oe1=1'b1;
+#20 ram_a1=7'd1;din1=32'h0807_0605;ram_we1=1'b1;ram_oe1=1'b1;
+#20 start_flag=1'b1;rst_n=1'b1;BLE_TX_RX_EN=1'b1;ram_cs1=1'b0;
+#20000 $stop;
+*/
+
+//9 bytes
+/*
+BLE_DATA_HEADER=16'h0916;
+ram_a1=7'd0;din1=32'h0403_0201;ram_cs1=1'b1;ram_we1=1'b1;ram_oe1=1'b1;
+#20 ram_a1=7'd1;din1=32'h0807_0605;ram_we1=1'b1;ram_oe1=1'b1;
+#20 ram_a1=7'd2;din1=32'h0000_0109;ram_we1=1'b1;ram_oe1=1'b1;
+#20 start_flag=1'b1;rst_n=1'b1;BLE_TX_RX_EN=1'b1;ram_cs1=1'b0;
+#20000 $stop;
+*/
+
+end
+
+endmodule

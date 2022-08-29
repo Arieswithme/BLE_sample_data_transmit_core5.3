@@ -1,0 +1,245 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'current_state.s_end'
+Slack : -23.392
+TNS   : -602.055
+
+Type  : Slow 1100mV 85C Model Setup 'BLE_TYPE[0]'
+Slack : -21.523
+TNS   : -549.290
+
+Type  : Slow 1100mV 85C Model Setup 'BLE_TX_RX_EN'
+Slack : -18.404
+TNS   : -438.037
+
+Type  : Slow 1100mV 85C Model Setup 'current_state.s_tx_pdu_header'
+Slack : -10.118
+TNS   : -315.273
+
+Type  : Slow 1100mV 85C Model Setup 'pka_1or2m_gck'
+Slack : -7.426
+TNS   : -27080.192
+
+Type  : Slow 1100mV 85C Model Hold 'pka_1or2m_gck'
+Slack : -1.829
+TNS   : -3.387
+
+Type  : Slow 1100mV 85C Model Hold 'BLE_TX_RX_EN'
+Slack : -1.670
+TNS   : -1.670
+
+Type  : Slow 1100mV 85C Model Hold 'BLE_TYPE[0]'
+Slack : 0.117
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'current_state.s_end'
+Slack : 0.707
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'current_state.s_tx_pdu_header'
+Slack : 0.735
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pka_1or2m_gck'
+Slack : -0.394
+TNS   : -2225.326
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'current_state.s_tx_pdu_header'
+Slack : -0.022
+TNS   : -0.037
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'BLE_TX_RX_EN'
+Slack : -0.001
+TNS   : -0.001
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'BLE_TYPE[0]'
+Slack : 0.078
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'current_state.s_end'
+Slack : 0.134
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'current_state.s_end'
+Slack : -22.462
+TNS   : -581.224
+
+Type  : Slow 1100mV 0C Model Setup 'BLE_TYPE[0]'
+Slack : -20.620
+TNS   : -529.725
+
+Type  : Slow 1100mV 0C Model Setup 'BLE_TX_RX_EN'
+Slack : -17.610
+TNS   : -421.601
+
+Type  : Slow 1100mV 0C Model Setup 'current_state.s_tx_pdu_header'
+Slack : -9.835
+TNS   : -315.362
+
+Type  : Slow 1100mV 0C Model Setup 'pka_1or2m_gck'
+Slack : -7.084
+TNS   : -25649.351
+
+Type  : Slow 1100mV 0C Model Hold 'pka_1or2m_gck'
+Slack : -1.897
+TNS   : -3.600
+
+Type  : Slow 1100mV 0C Model Hold 'BLE_TX_RX_EN'
+Slack : -1.766
+TNS   : -1.766
+
+Type  : Slow 1100mV 0C Model Hold 'BLE_TYPE[0]'
+Slack : -0.051
+TNS   : -0.051
+
+Type  : Slow 1100mV 0C Model Hold 'current_state.s_end'
+Slack : 0.624
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'current_state.s_tx_pdu_header'
+Slack : 0.646
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pka_1or2m_gck'
+Slack : -0.394
+TNS   : -2390.183
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'current_state.s_tx_pdu_header'
+Slack : -0.015
+TNS   : -0.015
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'BLE_TX_RX_EN'
+Slack : 0.017
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'BLE_TYPE[0]'
+Slack : 0.059
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'current_state.s_end'
+Slack : 0.132
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'current_state.s_end'
+Slack : -15.832
+TNS   : -391.648
+
+Type  : Fast 1100mV 85C Model Setup 'BLE_TYPE[0]'
+Slack : -14.842
+TNS   : -362.486
+
+Type  : Fast 1100mV 85C Model Setup 'BLE_TX_RX_EN'
+Slack : -12.422
+TNS   : -281.245
+
+Type  : Fast 1100mV 85C Model Setup 'current_state.s_tx_pdu_header'
+Slack : -5.881
+TNS   : -167.646
+
+Type  : Fast 1100mV 85C Model Setup 'pka_1or2m_gck'
+Slack : -4.437
+TNS   : -15602.824
+
+Type  : Fast 1100mV 85C Model Hold 'pka_1or2m_gck'
+Slack : -0.947
+TNS   : -1.635
+
+Type  : Fast 1100mV 85C Model Hold 'BLE_TX_RX_EN'
+Slack : -0.894
+TNS   : -0.895
+
+Type  : Fast 1100mV 85C Model Hold 'current_state.s_tx_pdu_header'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'BLE_TYPE[0]'
+Slack : 0.219
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'current_state.s_end'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'BLE_TX_RX_EN'
+Slack : -0.161
+TNS   : -4.736
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'BLE_TYPE[0]'
+Slack : -0.132
+TNS   : -1.115
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pka_1or2m_gck'
+Slack : -0.087
+TNS   : -328.246
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'current_state.s_tx_pdu_header'
+Slack : 0.044
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'current_state.s_end'
+Slack : 0.262
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'current_state.s_end'
+Slack : -14.075
+TNS   : -352.939
+
+Type  : Fast 1100mV 0C Model Setup 'BLE_TYPE[0]'
+Slack : -13.104
+TNS   : -322.061
+
+Type  : Fast 1100mV 0C Model Setup 'BLE_TX_RX_EN'
+Slack : -10.713
+TNS   : -242.011
+
+Type  : Fast 1100mV 0C Model Setup 'current_state.s_tx_pdu_header'
+Slack : -5.508
+TNS   : -156.664
+
+Type  : Fast 1100mV 0C Model Setup 'pka_1or2m_gck'
+Slack : -3.759
+TNS   : -13237.261
+
+Type  : Fast 1100mV 0C Model Hold 'BLE_TX_RX_EN'
+Slack : -1.062
+TNS   : -1.135
+
+Type  : Fast 1100mV 0C Model Hold 'pka_1or2m_gck'
+Slack : -1.013
+TNS   : -1.825
+
+Type  : Fast 1100mV 0C Model Hold 'BLE_TYPE[0]'
+Slack : 0.040
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'current_state.s_tx_pdu_header'
+Slack : 0.309
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'current_state.s_end'
+Slack : 0.419
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'BLE_TX_RX_EN'
+Slack : -0.128
+TNS   : -3.005
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'BLE_TYPE[0]'
+Slack : -0.122
+TNS   : -1.019
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pka_1or2m_gck'
+Slack : -0.087
+TNS   : -329.107
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'current_state.s_tx_pdu_header'
+Slack : 0.096
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'current_state.s_end'
+Slack : 0.291
+TNS   : 0.000
+
+------------------------------------------------------------

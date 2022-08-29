@@ -1,0 +1,24 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/eda/xzx_201800402012_14 {C:/Users/HP/Desktop/eda/xzx_201800402012_14/my_decode.v}
+vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/eda/xzx_201800402012_14 {C:/Users/HP/Desktop/eda/xzx_201800402012_14/my_fpq.v}
+vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/eda/xzx_201800402012_14 {C:/Users/HP/Desktop/eda/xzx_201800402012_14/my_jtd.v}
+vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/eda/xzx_201800402012_14 {C:/Users/HP/Desktop/eda/xzx_201800402012_14/my_bcd.v}
+vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/eda/xzx_201800402012_14 {C:/Users/HP/Desktop/eda/xzx_201800402012_14/my_25.v}
+vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/eda/xzx_201800402012_14 {C:/Users/HP/Desktop/eda/xzx_201800402012_14/my_20.v}
+vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/eda/xzx_201800402012_14 {C:/Users/HP/Desktop/eda/xzx_201800402012_14/my_5.v}
+vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/eda/xzx_201800402012_14 {C:/Users/HP/Desktop/eda/xzx_201800402012_14/my_rst.v}
+
+vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/eda/xzx_201800402012_14 {C:/Users/HP/Desktop/eda/xzx_201800402012_14/my_jtd_tb.vt}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  my_jtd_tb
+
+add wave *
+view structure
+view signals
+run -all

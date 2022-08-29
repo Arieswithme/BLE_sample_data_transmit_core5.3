@@ -1,0 +1,7 @@
+module my_jtd(clk,);
+ input  clk,rst;
+ output jp,out;
+ reg out,jp;
+ wire clk_out,clk_out1;
+ //reg[2:0] current_state,next_state;
+ parameter[1:0] s0=2'b00,s1=2'b01,s2=2'b10,s3=2'b11

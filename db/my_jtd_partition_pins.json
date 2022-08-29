@@ -1,0 +1,629 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "r_fsm_data",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[16]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[17]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[18]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[19]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[20]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[21]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[22]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[23]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[24]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[25]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[26]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[27]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[28]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[29]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[30]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_d1[31]",
+					"strict" : false
+				},
+				{
+					"name" : "pka_1or2m_gck",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_TYPE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_TYPE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_TYPE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_TERM1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_TERM2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_CI[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_HEADER[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_DATA_HEADER[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_STATE",
+					"strict" : false
+				},
+				{
+					"name" : "start_flag",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_TX_RX_EN",
+					"strict" : false
+				},
+				{
+					"name" : "ram_cs1",
+					"strict" : false
+				},
+				{
+					"name" : "ram_we1",
+					"strict" : false
+				},
+				{
+					"name" : "ram_oe1",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_TERM1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_TERM2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_CI[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_HEADER[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_DATA_HEADER[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_a1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_a1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_a1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_a1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_a1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_a1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_a1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_HEADER[14]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_DATA_HEADER[14]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_HEADER[15]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_DATA_HEADER[15]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_HEADER[10]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_DATA_HEADER[10]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_HEADER[11]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_DATA_HEADER[11]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_HEADER[12]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_DATA_HEADER[12]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_HEADER[13]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_DATA_HEADER[13]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_HEADER[8]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_DATA_HEADER[8]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_HEADER[9]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_DATA_HEADER[9]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_HEADER[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_DATA_HEADER[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_TERM2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_TERM1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_HEADER[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_DATA_HEADER[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_HEADER[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_DATA_HEADER[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_HEADER[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_DATA_HEADER[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_HEADER[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_DATA_HEADER[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ADV_HEADER[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_DATA_HEADER[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[8]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[9]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[10]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[11]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[12]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[13]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[14]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[16]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[17]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[18]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[19]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[20]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[20]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[21]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[21]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[22]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[23]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[23]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[24]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[24]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[25]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[25]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[26]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[26]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[27]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[27]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[28]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[28]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[29]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[29]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[30]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[30]",
+					"strict" : false
+				},
+				{
+					"name" : "BLE_ACC_ADDR[31]",
+					"strict" : false
+				},
+				{
+					"name" : "Preamble[31]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

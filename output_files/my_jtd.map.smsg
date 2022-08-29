@@ -1,0 +1,3 @@
+Info (10281): Verilog HDL Declaration information at my_jtd.v(40): object "RAM_A2" differs only in case from object "ram_a2" in the same scope File: C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_jtd.v Line: 40
+Info (10281): Verilog HDL Declaration information at my_jtd.v(41): object "RAM_CS2" differs only in case from object "ram_cs2" in the same scope File: C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_jtd.v Line: 41
+Info (10281): Verilog HDL Declaration information at my_jtd.v(41): object "RAM_OE2" differs only in case from object "ram_oe2" in the same scope File: C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_jtd.v Line: 41

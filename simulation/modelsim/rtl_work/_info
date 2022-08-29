@@ -1,0 +1,165 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/HP/Desktop/bluetooth/test_zhcoded/simulation/modelsim
+vmy_crc
+Z1 !s110 1648213177
+!i10b 1
+!s100 n85LnV1iU6LUK`IdiGRCg0
+I2m;lQ0jhV6o;PWZh`LSaI2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1647593631
+8C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_crc.v
+FC:/Users/HP/Desktop/bluetooth/test_zhcoded/my_crc.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1648213177.000000
+!s107 C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_crc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/bluetooth/test_zhcoded|C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_crc.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/HP/Desktop/bluetooth/test_zhcoded
+Z7 tCvgOpt 0
+vmy_crc_test
+R1
+!i10b 1
+!s100 PFY]RXE?:VI0UV<f_akoM2
+IK<LWPeGLS_TTnz2<2G20c0
+R2
+R0
+w1646790708
+8C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_crc_test.v
+FC:/Users/HP/Desktop/bluetooth/test_zhcoded/my_crc_test.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_crc_test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/bluetooth/test_zhcoded|C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_crc_test.v|
+!i113 1
+R5
+R6
+R7
+vmy_dwh
+R1
+!i10b 1
+!s100 hJo9hKagfBS=WRPiRVnoO1
+IR`mEmC<YI<F;T[[;@;kcQ1
+R2
+R0
+w1647504950
+8C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_dwh.v
+FC:/Users/HP/Desktop/bluetooth/test_zhcoded/my_dwh.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_dwh.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/bluetooth/test_zhcoded|C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_dwh.v|
+!i113 1
+R5
+R6
+R7
+vmy_FEC
+R1
+!i10b 1
+!s100 XLbohBLQ5>Wd1fI=WD3^?0
+IPcVkWTI69U_QMi53RkYVz0
+R2
+R0
+w1647164952
+8C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_FEC.v
+FC:/Users/HP/Desktop/bluetooth/test_zhcoded/my_FEC.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_FEC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/bluetooth/test_zhcoded|C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_FEC.v|
+!i113 1
+R5
+R6
+R7
+nmy_@f@e@c
+vmy_jtd
+R1
+!i10b 1
+!s100 0Ob?9`I0^GoBikd7DL<Of3
+I7Wo]`1ZD:_E=BJn6SaDVZ2
+R2
+R0
+w1648213132
+8C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_jtd.v
+FC:/Users/HP/Desktop/bluetooth/test_zhcoded/my_jtd.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+Z8 !s107 C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_jtd.v|C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_jtd_tb.vt|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/bluetooth/test_zhcoded|C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_jtd_tb.vt|
+!i113 1
+R5
+R6
+R7
+vmy_jtd_tb
+R1
+!i10b 1
+!s100 `E1F^m8dG?[K;Hz`oPbB?3
+I0_QX=eF^T[n3^g=1YR7_H1
+R2
+R0
+w1648179451
+8C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_jtd_tb.vt
+FC:/Users/HP/Desktop/bluetooth/test_zhcoded/my_jtd_tb.vt
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R8
+R9
+!i113 1
+R5
+R6
+R7
+vmy_ram
+R1
+!i10b 1
+!s100 TEWCmPJkNM3MVfCH^5nnJ1
+IXe^M17[RzzRVY^QA`@oUA0
+R2
+R0
+w1646710720
+8C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_ram.v
+FC:/Users/HP/Desktop/bluetooth/test_zhcoded/my_ram.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/bluetooth/test_zhcoded|C:/Users/HP/Desktop/bluetooth/test_zhcoded/my_ram.v|
+!i113 1
+R5
+R6
+R7

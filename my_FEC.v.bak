@@ -1,0 +1,35 @@
+module my_FEC(
+input pka_1or2m_gclk,
+input r_tx_rst,
+//input[4:0] r_tx_state,
+input dwh_data,
+input fsm_dwh_vld_bit,
+input r_coded_en,
+output reg r_data0,
+output reg r_data1,
+output code_data_vld
+    );
+
+reg [2:0] coded_r;//移位寄存器
+
+//always @(posedge pka_1or2m_gclk or negedge r_tx_rst)
+always @(posedge pka_1or2m_gclk)
+begin
+    if(r_tx_rst)
+        begin
+            coded_r <= 3'd0;
+				r_data0 <= 0;
+				r_data1 <= 0;
+        end 
+    else
+        begin
+            coded_r <= (fsm_dwh_vld_bit && r_coded_en) ? ({coded_r[1:0],dwh_data}) : coded_r;
+				r_data0 <= dwh_data ^ coded_r[0] ^ coded_r[1] ^ coded_r[2];
+				r_data1 <= dwh_data ^ coded_r[1] ^ coded_r[2];
+        end
+end
+assign code_data_vld = fsm_dwh_vld_bit && r_coded_en;
+//assign r_data0 = dwh_data ^ coded_r[0] ^ coded_r[1] ^ coded_r[2];  // G0(x) = 1 + x + x^2 + x^3
+//assign r_data1 = dwh_data ^ coded_r[1] ^ coded_r[2]; // G1(x) = 1 + x^2 + x^3
+
+endmodule

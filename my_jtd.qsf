@@ -1,0 +1,139 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+# Date created = 14:14:14  December 09, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		my_jtd_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY my_jtd
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:14:14  DECEMBER 09, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name VERILOG_FILE my_jtd.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_AA14 -to rst
+set_location_assignment PIN_AC12 -to sen1
+set_location_assignment PIN_AF9 -to sen2
+set_location_assignment PIN_V16 -to Y1
+set_location_assignment PIN_W16 -to G1
+set_location_assignment PIN_V17 -to R1
+set_location_assignment PIN_W19 -to G2
+set_location_assignment PIN_Y19 -to R2
+set_location_assignment PIN_W17 -to Y2
+set_location_assignment PIN_AH28 -to g50
+set_location_assignment PIN_AG28 -to f50
+set_location_assignment PIN_AF28 -to e50
+set_location_assignment PIN_AG27 -to d50
+set_location_assignment PIN_AE28 -to c50
+set_location_assignment PIN_AE27 -to b50
+set_location_assignment PIN_AE26 -to a50
+set_location_assignment PIN_AC30 -to g200
+set_location_assignment PIN_AJ29 -to a51
+set_location_assignment PIN_AH29 -to b51
+set_location_assignment PIN_AH30 -to c51
+set_location_assignment PIN_AG30 -to d51
+set_location_assignment PIN_AF29 -to e51
+set_location_assignment PIN_AF30 -to f51
+set_location_assignment PIN_AD27 -to g51
+set_location_assignment PIN_AB23 -to a200
+set_location_assignment PIN_AE29 -to b200
+set_location_assignment PIN_AD29 -to c200
+set_location_assignment PIN_AC28 -to d200
+set_location_assignment PIN_AD30 -to e200
+set_location_assignment PIN_AC29 -to f200
+set_location_assignment PIN_AD26 -to a201
+set_location_assignment PIN_AC27 -to b201
+set_location_assignment PIN_AD25 -to c201
+set_location_assignment PIN_AC25 -to d201
+set_location_assignment PIN_AB28 -to e201
+set_location_assignment PIN_AB25 -to f201
+set_location_assignment PIN_AA24 -to a250
+set_location_assignment PIN_AB22 -to g201
+set_location_assignment PIN_Y23 -to b250
+set_location_assignment PIN_Y24 -to c250
+set_location_assignment PIN_W22 -to d250
+set_location_assignment PIN_W24 -to e250
+set_location_assignment PIN_W25 -to g250
+set_location_assignment PIN_V23 -to f250
+set_location_assignment PIN_V25 -to a251
+set_location_assignment PIN_AA28 -to b251
+set_location_assignment PIN_Y27 -to c251
+set_location_assignment PIN_AB27 -to d251
+set_location_assignment PIN_AB26 -to e251
+set_location_assignment PIN_AA26 -to f251
+set_location_assignment PIN_AA25 -to g251
+set_location_assignment PIN_AF14 -to clk
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name ACTIVE_SERIAL_CLOCK FREQ_100MHZ
+set_location_assignment PIN_AF10 -to ys
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH my_jtd_tb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME my_jtd_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id my_jtd_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME my_jtd_tb -section_id my_jtd_tb
+set_global_assignment -name VERILOG_TEST_BENCH_FILE my_jtd_tb.vt
+set_global_assignment -name VERILOG_FILE my_ram.v
+set_global_assignment -name VERILOG_FILE my_crc.v
+set_global_assignment -name VERILOG_FILE my_dwh.v
+set_global_assignment -name VERILOG_FILE my_FEC.v
+set_global_assignment -name EDA_TEST_BENCH_FILE my_jtd_tb.vt -section_id my_jtd_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE my_ram.v -section_id my_jtd_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE my_dwh.v -section_id my_jtd_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE my_crc_test.v -section_id my_jtd_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE my_crc.v -section_id my_jtd_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE my_FEC.v -section_id my_jtd_tb
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

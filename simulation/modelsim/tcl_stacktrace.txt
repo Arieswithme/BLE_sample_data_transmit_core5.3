@@ -1,0 +1,344 @@
+Tue Mar 08 17:44:51 CST 2022
+Trace back: invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"
+    while executing
+"$widget index @$x,$y"
+    (procedure "WaveABar::mouseMotionUpdate" line 19)
+    invoked from within
+"WaveABar::mouseMotionUpdate .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data .main_pane.wave.interior.cs.body.pw.wf 292 266"
+    ("after" script)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+Tue Mar 08 22:58:51 CST 2022
+Trace back: invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"
+    while executing
+"$widget index @$x,$y"
+    (procedure "WaveABar::mouseMotionUpdate" line 19)
+    invoked from within
+"WaveABar::mouseMotionUpdate .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data .main_pane.wave.interior.cs.body.pw.wf 50 286"
+    ("after" script)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+Sun Mar 13 18:53:24 CST 2022
+Trace back: invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"
+    while executing
+"$widget index @$x,$y"
+    (procedure "WaveABar::mouseMotionUpdate" line 19)
+    invoked from within
+"WaveABar::mouseMotionUpdate .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data .main_pane.wave.interior.cs.body.pw.wf 298 135"
+    ("after" script)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+Mon Mar 14 21:16:24 CST 2022
+Trace back: bad window path name ""
+    while executing
+"winfo parent $child"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::IsChildOf" body line 3)
+    invoked from within
+"$::vsimPriv(windowmgr) IsChildOf [$wo GetData wave] [focus]"
+    (object "::.main_pane.dataflow.interior.cs.body.pw.df.c" method "::vsimwidgets::Dataflow::ActivePane" body line 9)
+    invoked from within
+"ActivePane"
+    (object "::.main_pane.dataflow.interior.cs.body.pw.df.c" method "::vsimwidgets::Dataflow::Activate" body line 21)
+    invoked from within
+".main_pane.dataflow.interior.cs.body.pw.df.c Activate .main_pane.dataflow"
+    (in namespace inscope "::" script line 1)
+    invoked from within
+"namespace inscope :: {.main_pane.dataflow.interior.cs.body.pw.df.c Activate} .main_pane.dataflow"
+    ("eval" body line 1)
+    invoked from within
+"eval $itk_option(-activatecommand) $frame_name"
+    (object "::.main_pane.dataflow" method "::mtiwidgets::WindowObj::Activate" body line 16)
+    invoked from within
+"$windowobj Activate """
+    (object "::.vcop" method "::vsimwidgets::Vcop::ActualActivate" body line 36)
+    invoked from within
+"::.vcop ActualActivate"
+    (in namespace inscope "::vsimwidgets::Vcop" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Vcop {::.vcop ActualActivate}"
+    ("after" script)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {bad window path name ""}
+  <1:eval:1: ::tk::dialog::error::bgerror {bad window path name ""}
+Wed Mar 16 21:02:13 CST 2022
+Trace back: invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"
+    while executing
+"$widget index @$x,$y"
+    (procedure "WaveABar::mouseMotionUpdate" line 19)
+    invoked from within
+"WaveABar::mouseMotionUpdate .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data .main_pane.wave.interior.cs.body.pw.wf 353 68"
+    ("after" script)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+Fri Mar 18 20:54:18 CST 2022
+Trace back: invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"
+    while executing
+"$widget index @$x,$y"
+    (procedure "WaveABar::mouseMotionUpdate" line 19)
+    invoked from within
+"WaveABar::mouseMotionUpdate .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data .main_pane.wave.interior.cs.body.pw.wf 250 300"
+    ("after" script)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+Fri Mar 18 21:20:10 CST 2022
+Trace back: invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"
+    while executing
+"$widget index @$x,$y"
+    (procedure "WaveABar::mouseMotionUpdate" line 19)
+    invoked from within
+"WaveABar::mouseMotionUpdate .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data .main_pane.wave.interior.cs.body.pw.wf 365 290"
+    ("after" script)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+Fri Mar 18 21:55:48 CST 2022
+Trace back: bad window path name ""
+    while executing
+"winfo parent $child"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::IsChildOf" body line 3)
+    invoked from within
+"$::vsimPriv(windowmgr) IsChildOf [$wo GetData wave] [focus]"
+    (object "::.main_pane.dataflow.interior.cs.body.pw.df.c" method "::vsimwidgets::Dataflow::ActivePane" body line 9)
+    invoked from within
+"ActivePane"
+    (object "::.main_pane.dataflow.interior.cs.body.pw.df.c" method "::vsimwidgets::Dataflow::Activate" body line 21)
+    invoked from within
+".main_pane.dataflow.interior.cs.body.pw.df.c Activate .main_pane.dataflow"
+    (in namespace inscope "::" script line 1)
+    invoked from within
+"namespace inscope :: {.main_pane.dataflow.interior.cs.body.pw.df.c Activate} .main_pane.dataflow"
+    ("eval" body line 1)
+    invoked from within
+"eval $itk_option(-activatecommand) $frame_name"
+    (object "::.main_pane.dataflow" method "::mtiwidgets::WindowObj::Activate" body line 16)
+    invoked from within
+"$windowobj Activate """
+    (object "::.vcop" method "::vsimwidgets::Vcop::ActualActivate" body line 36)
+    invoked from within
+"::.vcop ActualActivate"
+    (in namespace inscope "::vsimwidgets::Vcop" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Vcop {::.vcop ActualActivate}"
+    ("after" script)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {bad window path name ""}
+  <1:eval:1: ::tk::dialog::error::bgerror {bad window path name ""}
+Fri Mar 18 22:09:10 CST 2022
+Trace back: invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"
+    while executing
+"$widget index @$x,$y"
+    (procedure "WaveABar::mouseMotionUpdate" line 19)
+    invoked from within
+"WaveABar::mouseMotionUpdate .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data .main_pane.wave.interior.cs.body.pw.wf 332 159"
+    ("after" script)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+Sun Mar 20 16:30:44 CST 2022
+Trace back: invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"
+    while executing
+"$widget index @$x,$y"
+    (procedure "WaveABar::mouseMotionUpdate" line 19)
+    invoked from within
+"WaveABar::mouseMotionUpdate .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data .main_pane.wave.interior.cs.body.pw.wf 330 314"
+    ("after" script)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+Sun Mar 20 21:44:55 CST 2022
+Trace back: invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"
+    while executing
+"$widget index @$x,$y"
+    (procedure "WaveABar::mouseMotionUpdate" line 19)
+    invoked from within
+"WaveABar::mouseMotionUpdate .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data .main_pane.wave.interior.cs.body.pw.wf 476 299"
+    ("after" script)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+Tue Mar 22 16:54:52 CST 2022
+Trace back: bad window path name ""
+    while executing
+"winfo parent $child"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::IsChildOf" body line 3)
+    invoked from within
+"$::vsimPriv(windowmgr) IsChildOf [$wo GetData wave] [focus]"
+    (object "::.main_pane.dataflow.interior.cs.body.pw.df.c" method "::vsimwidgets::Dataflow::ActivePane" body line 9)
+    invoked from within
+"ActivePane"
+    (object "::.main_pane.dataflow.interior.cs.body.pw.df.c" method "::vsimwidgets::Dataflow::Activate" body line 21)
+    invoked from within
+".main_pane.dataflow.interior.cs.body.pw.df.c Activate .main_pane.dataflow"
+    (in namespace inscope "::" script line 1)
+    invoked from within
+"namespace inscope :: {.main_pane.dataflow.interior.cs.body.pw.df.c Activate} .main_pane.dataflow"
+    ("eval" body line 1)
+    invoked from within
+"eval $itk_option(-activatecommand) $frame_name"
+    (object "::.main_pane.dataflow" method "::mtiwidgets::WindowObj::Activate" body line 16)
+    invoked from within
+"$windowobj Activate """
+    (object "::.vcop" method "::vsimwidgets::Vcop::ActualActivate" body line 36)
+    invoked from within
+"::.vcop ActualActivate"
+    (in namespace inscope "::vsimwidgets::Vcop" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Vcop {::.vcop ActualActivate}"
+    ("after" script)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {bad window path name ""}
+  <1:eval:1: ::tk::dialog::error::bgerror {bad window path name ""}
+Tue Mar 22 21:31:29 CST 2022
+Trace back: invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"
+    while executing
+"$widget index @$x,$y"
+    (procedure "WaveABar::mouseMotionUpdate" line 19)
+    invoked from within
+"WaveABar::mouseMotionUpdate .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data .main_pane.wave.interior.cs.body.pw.wf 276 290"
+    ("after" script)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+Wed Mar 23 21:04:32 CST 2022
+Trace back: invalid command name ""
+    while executing
+"$wo GetData showwave"
+    (object "::.main_pane.dataflow.interior.cs.body.pw.df.c" method "::vsimwidgets::Dataflow::Base::UserChangedActiveTime" body line 6)
+    invoked from within
+"::.main_pane.dataflow.interior.cs.body.pw.df.c UserChangedActiveTime"
+    (in namespace inscope "::vsimwidgets::Dataflow::Base" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Dataflow::Base {::.main_pane.dataflow.interior.cs.body.pw.df.c UserChangedActiveTime}"
+    ("eval" body line 1)
+    invoked from within
+"eval [$timebar cget -timechangecb]"
+    (procedure "::vsimwidgets::TimeBar::TimeChangeHandler" body line 17)
+    invoked from within
+"::vsimwidgets::TimeBar::TimeChangeHandler ::vsimPriv acttime write"
+    (write trace on "::vsimPriv(acttime)")
+    invoked from within
+"set ::vsimPriv(acttime) $t"
+    (procedure "::TimeBarCmd::SetActiveTime" line 10)
+    invoked from within
+"::TimeBarCmd::SetActiveTime $t "--store""
+    (procedure "::vsimwidgets::TimeBar::SetActiveTime" body line 18)
+    invoked from within
+"SetActiveTime $_acttimeAfterDrag --postdrag"
+    (procedure "::vsimwidgets::TimeBar::WaveCursorDragChange" body line 23)
+    invoked from within
+"::vsimwidgets::TimeBar::WaveCursorDragChange vsimPriv dragging_cursor write"
+    (write trace on "vsimPriv(dragging_cursor)")
+    invoked from within
+"set vsimPriv(dragging_cursor) 0"
+    (procedure "Wave::1Up" line 76)
+    invoked from within
+"Wave::1Up $widget $x $y"
+    (procedure "Wave::SelectUp" line 4)
+    invoked from within
+"Wave::SelectUp	 .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data 398 258 723 442 "
+    (command bound to event)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {can't set "vsimPriv(dragging_cursor)": can't set "::vsimPriv(acttime)": invalid command name ""}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't set "vsimPriv(dragging_cursor)": can't set "::vsimPriv(acttime)": invalid command name ""}
+Wed Mar 23 21:04:42 CST 2022
+Trace back: invalid command name ""
+    while executing
+"$wo GetData showwave"
+    (object "::.main_pane.dataflow.interior.cs.body.pw.df.c" method "::vsimwidgets::Dataflow::Base::UserChangedActiveTime" body line 6)
+    invoked from within
+"::.main_pane.dataflow.interior.cs.body.pw.df.c UserChangedActiveTime"
+    (in namespace inscope "::vsimwidgets::Dataflow::Base" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Dataflow::Base {::.main_pane.dataflow.interior.cs.body.pw.df.c UserChangedActiveTime}"
+    ("eval" body line 1)
+    invoked from within
+"eval [$timebar cget -timechangecb]"
+    (procedure "::vsimwidgets::TimeBar::TimeChangeHandler" body line 17)
+    invoked from within
+"::vsimwidgets::TimeBar::TimeChangeHandler ::vsimPriv acttime write"
+    (write trace on "::vsimPriv(acttime)")
+    invoked from within
+"set ::vsimPriv(acttime) $t"
+    (procedure "::TimeBarCmd::SetActiveTime" line 10)
+    invoked from within
+"::TimeBarCmd::SetActiveTime $t "--store""
+    (procedure "::vsimwidgets::TimeBar::SetActiveTime" body line 18)
+    invoked from within
+"SetActiveTime $_acttimeAfterDrag --postdrag"
+    (procedure "::vsimwidgets::TimeBar::WaveCursorDragChange" body line 23)
+    invoked from within
+"::vsimwidgets::TimeBar::WaveCursorDragChange vsimPriv dragging_cursor write"
+    (write trace on "vsimPriv(dragging_cursor)")
+    invoked from within
+"set vsimPriv(dragging_cursor) 0"
+    (procedure "Wave::1Up" line 76)
+    invoked from within
+"Wave::1Up $widget $x $y"
+    (procedure "Wave::SelectUp" line 4)
+    invoked from within
+"Wave::SelectUp	 .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data 77 529 402 713 "
+    (command bound to event)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {can't set "vsimPriv(dragging_cursor)": can't set "::vsimPriv(acttime)": invalid command name ""}
+  <1:proc:204: ::tk::dialog::error::bgerror {can't set "vsimPriv(dragging_cursor)": can't set "::vsimPriv(acttime)": invalid command name ""}
+Wed Mar 23 21:05:00 CST 2022
+Trace back: invalid command name ""
+    while executing
+"$wo GetData showwave"
+    (object "::.main_pane.dataflow.interior.cs.body.pw.df.c" method "::vsimwidgets::Dataflow::Base::UserChangedActiveTime" body line 6)
+    invoked from within
+"::.main_pane.dataflow.interior.cs.body.pw.df.c UserChangedActiveTime"
+    (in namespace inscope "::vsimwidgets::Dataflow::Base" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Dataflow::Base {::.main_pane.dataflow.interior.cs.body.pw.df.c UserChangedActiveTime}"
+    ("eval" body line 1)
+    invoked from within
+"eval [$timebar cget -timechangecb]"
+    (procedure "::vsimwidgets::TimeBar::TimeChangeHandler" body line 17)
+    invoked from within
+"::vsimwidgets::TimeBar::TimeChangeHandler ::vsimPriv acttime write"
+    (write trace on "::vsimPriv(acttime)")
+    invoked from within
+"set ::vsimPriv(acttime) $t"
+    (procedure "::TimeBarCmd::SetActiveTime" line 10)
+    invoked from within
+"::TimeBarCmd::SetActiveTime $t "--store""
+    (procedure "::vsimwidgets::TimeBar::SetActiveTime" body line 18)
+    invoked from within
+"SetActiveTime $_acttimeAfterDrag --postdrag"
+    (procedure "::vsimwidgets::TimeBar::WaveCursorDragChange" body line 23)
+    invoked from within
+"::vsimwidgets::TimeBar::WaveCursorDragChange vsimPriv dragging_cursor write"
+    (write trace on "vsimPriv(dragging_cursor)")
+    invoked from within
+"set vsimPriv(dragging_cursor) 0"
+    (procedure "Wave::1Up" line 76)
+    invoked from within
+"Wave::1Up $widget $x $y"
+    (procedure "Wave::SelectUp" line 4)
+    invoked from within
+"Wave::SelectUp	 .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data 372 494 697 678 "
+    (command bound to event)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {can't set "vsimPriv(dragging_cursor)": can't set "::vsimPriv(acttime)": invalid command name ""}
+  <1:proc:204: ::tk::dialog::error::bgerror {can't set "vsimPriv(dragging_cursor)": can't set "::vsimPriv(acttime)": invalid command name ""}
+Thu Mar 24 16:07:46 CST 2022
+Trace back: bad window path name ""
+    while executing
+"winfo parent $child"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::IsChildOf" body line 3)
+    invoked from within
+"$::vsimPriv(windowmgr) IsChildOf [$wo GetData wave] [focus]"
+    (object "::.main_pane.dataflow.interior.cs.body.pw.df.c" method "::vsimwidgets::Dataflow::ActivePane" body line 9)
+    invoked from within
+"ActivePane"
+    (object "::.main_pane.dataflow.interior.cs.body.pw.df.c" method "::vsimwidgets::Dataflow::Activate" body line 21)
+    invoked from within
+".main_pane.dataflow.interior.cs.body.pw.df.c Activate .main_pane.dataflow"
+    (in namespace inscope "::" script line 1)
+    invoked from within
+"namespace inscope :: {.main_pane.dataflow.interior.cs.body.pw.df.c Activate} .main_pane.dataflow"
+    ("eval" body line 1)
+    invoked from within
+"eval $itk_option(-activatecommand) $frame_name"
+    (object "::.main_pane.dataflow" method "::mtiwidgets::WindowObj::Activate" body line 16)
+    invoked from within
+"$windowobj Activate """
+    (object "::.vcop" method "::vsimwidgets::Vcop::ActualActivate" body line 36)
+    invoked from within
+"::.vcop ActualActivate"
+    (in namespace inscope "::vsimwidgets::Vcop" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Vcop {::.vcop ActualActivate}"
+    ("after" script)
+  <2:F:/quartus 17.1/xzdz/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {bad window path name ""}
+  <1:eval:1: ::tk::dialog::error::bgerror {bad window path name ""}

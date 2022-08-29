@@ -1,0 +1,84 @@
+`timescale 1ns/1ps
+
+module my_jc_tb;
+reg clk,rst,sr;
+wire valid;
+
+my_jc u1(clk,rst,sr,valid);
+always
+ begin
+ #5
+ clk=~clk;
+ end
+initial
+ begin
+ clk=1'b0;
+ rst =1'b1;
+ sr=1'b0;
+ 
+ #10
+ rst=1'b1;
+ sr=1'b1;
+ 
+ #10
+ rst=1'b0;
+ sr=1'b1;
+ 
+ #10
+ rst=1'b0;
+ sr=1'b1;
+ 
+ #10
+ rst=1'b0;
+ sr=1'b1;
+ 
+ #10
+ rst=1'b0;
+ sr=1'b0;
+ 
+ #10
+ rst=1'b0;
+ sr=1'b0;
+ 
+ #10
+ rst=1'b0;
+ sr=1'b1;
+ 
+ #10
+ rst=1'b0;
+ sr=1'b0;
+ 
+ //zc
+  #10
+ rst=1'b1;
+ sr=1'b1;
+ 
+ #10
+ rst=1'b0;
+ sr=1'b1;
+ 
+ #10
+ rst=1'b0;
+ sr=1'b1;
+ 
+ #10
+ rst=1'b0;
+ sr=1'b1;
+ 
+ #10
+ rst=1'b0;
+ sr=1'b0;
+ 
+ #10
+ rst=1'b0;
+ sr=1'b0;
+ 
+ #10
+ rst=1'b0;
+ sr=1'b1;
+ 
+ #10
+ rst=1'b0;
+ sr=1'b1;
+ end
+ endmodule
